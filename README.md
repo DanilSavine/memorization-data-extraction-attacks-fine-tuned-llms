@@ -10,7 +10,7 @@ You can read the report here [here](docs/Memorization_in_Fine_Tuned_LLMs_SAVINE_
 
 ## Key Findings
 
-1. Value (W^V) and Output (W^O) matrices contribute more significantly to memorization compared to Query (W^Q) and Key (W^K) matrices.
+1. In the Attention Mechanism, fine-tuning Value and Output matrices contributes more significantly to memorization compared to Query and Key matrices.
 2. Lower perplexity in the fine-tuned model correlates with increased memorization.
 3. Higher LoRA ranks lead to increased memorization, but with diminishing returns at higher ranks.
 
