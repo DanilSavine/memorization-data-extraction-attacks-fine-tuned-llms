@@ -1,7 +1,7 @@
 # Memorization in Fine-Tuned Large Language Models
 
 This repository contains the code and resources for our study on memorization in fine-tuned large language models, with a focus on the medical domain. 
-Research done while at the [PRAIRIE Institute](https://prairie-institute.fr/) at the PSL University in Paris, under the supervision of Prof. Olivier Cappé and Prof. Jamal Atif.
+Research done while at the [PRAIRIE Institute](https://prairie-institute.fr/) at the PSL University in Paris, under the supervision of Prof. Olivier Cappé, Prof. Jamal Atif, and Dr. Muni Sreenivas Pydi.
 
 ## Abstract
 
@@ -95,7 +95,7 @@ If you use this code or our findings in your research, please cite our work:
 
 ```
 @misc{savine2024memorization,
-  author = {Danil Savine, Jamal Atif, Olivier Cappé},
+  author = {Danil Savine, Muni Sreenivas Pydi, Jamal Atif, Olivier Cappé},
   title = {Memorization in Fine-Tuned Large Language Models},
   year = {2024},
   publisher = {GitHub},
