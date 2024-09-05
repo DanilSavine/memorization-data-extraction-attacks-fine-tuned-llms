@@ -1,3 +1,16 @@
+# Project specific
+data/
+models/
+notebooks/outputs/
+notebooks/outputs/*
+results/
+experiments/
+old/
+To do.md
+token.txt
+outputs/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

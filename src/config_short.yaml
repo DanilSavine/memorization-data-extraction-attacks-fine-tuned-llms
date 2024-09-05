@@ -1,0 +1,28 @@
+# Model settings
+model:
+  name: "meta-llama/Llama-2-7b-hf"
+  tokenizer_name: "meta-llama/Llama-2-7b-hf"
+  adapted_weights: ["q_proj", "k_proj"]
+  add_pad_token: false
+
+# Dataset settings
+dataset:
+  name: "sarus-tech/phee"
+  local_path: "../data/raw/"
+
+# Training settings
+training:
+  canaries_number: [1, 2, 3, 4, 8, 16, 32]
+  lora_rank: [1, 2, 4, 8]
+  random_seeds: [13, 7, 81, 17, 75, 90, 0, 10, 36, 99]
+  adapted_weights: [["q_proj"], ["k_proj"], ["v_proj"], ["o_proj"], ["q_proj", "k_proj"]]
+  output_dir: "../models/llama2_8B/"
+  batch_size: 16
+  gradient_accumulation_steps: 4
+  warmup_steps: 100
+  max_steps: 200
+  learning_rate: 1e-3
+
+# Paths
+paths:
+  token_file: "../token.txt"
