@@ -1,0 +1,45 @@
+# Model settings
+model:
+  name: "meta-llama/Llama-2-7b-hf"
+  tokenizer_name: "meta-llama/Llama-2-7b-hf"
+  adapted_weights: ["q_proj"]
+  add_pad_token: True
+
+# Dataset settings
+dataset:
+  name: "sarus-tech/phee"
+  local_path: "../data/raw/"
+
+# Training settings
+training:
+  canaries_number: [1]
+  lora_rank: [1]
+  lora_alpha: 16
+  random_seeds: [13]
+  adapted_weights: [["q_proj"]]
+  output_dir: "../models/llama2_8B/"
+  batch_size: 16
+  gradient_accumulation_steps: 4
+  warmup_steps: 100
+  max_steps: 200
+  learning_rate: 0.001
+
+# Paths
+paths:
+  token_file: "../token.txt"
+  output_csv: "../experiments/membership_inference_results.csv"
+  models_path : "../models/llama2_8B/llama2_8B_fine-tuned-on-phee-"
+
+
+# Hardware settings
+hardware:
+  cuda_visible_devices: "0"
+  device: "cuda:0"
+
+prompted_generation: 
+  canaries_number: [1]
+  adapted_weights: [["q_proj"]]
+  lora_rank: [1]
+  lora_alpha: 16
+  random_seeds: [13]
+  temperature: [0.5]
