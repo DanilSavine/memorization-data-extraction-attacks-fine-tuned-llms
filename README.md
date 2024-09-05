@@ -94,7 +94,7 @@ If you use this code or our findings in your research, please cite our work:
 
 ```
 @misc{savine2024memorization,
-  author = {Savine, Danil},
+  author = {Danil Savine, Jamal Atif, Olivier Cappé},
   title = {Memorization in Fine-Tuned Large Language Models},
   year = {2024},
   publisher = {GitHub},
