@@ -56,24 +56,24 @@ llm-memorization-study/
 
 ## Usage
 
-0. Configure the model and dataset in `src/config.yaml`.
+0. Configure the model and dataset in `src/config.yaml`, save your HuggingFace token to `token.txt` 
 
-1. Fine-tune the model:
+2. Fine-tune the model:
    ```
    python src/main_fine_tuning.py
    ```
 
-2. Run membership inference attack:
+3. Run membership inference attack:
    ```
    python src/main_membership_inference.py
    ```
 
-3. Perform prompted generation:
+4. Perform prompted generation:
    ```
    python src/main_prompted_generation.py
    ```
 
-4. Analyze results and generate plots using the Jupyter notebooks in the `notebooks/` directory.
+5. Analyze results and generate plots using the Jupyter notebooks in the `notebooks/` directory.
 
 ## Contributing
 
